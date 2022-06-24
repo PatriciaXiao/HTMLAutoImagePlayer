@@ -33,14 +33,16 @@ for (root, dirs, file) in os.walk(input_folder):
 
             suffix = f.split(".")[-1]
             raw_name = f[:-len(suffix)-1]
+
+            folder = root.split("/")[-1]
             
             if has_valid_year(raw_name):
                 if has_valid_date(raw_name):
                     time = raw_name[:8]
-                    name = raw_name[8:]
+                    name = folder + ": " + raw_name[8:]
                 else:
                     time = raw_name[:4]
-                    name = raw_name[4:]
+                    name = folder + ": " + raw_name[4:]
             else:
                 assert False, "There is an invalud file {0}".format(os.path.join(root, f))
 
