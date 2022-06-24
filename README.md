@@ -9,3 +9,7 @@
 2. Run the Python script [generate_filelist.py](./generate_filelist.py) to generate new data list file **my_helper.js**
 3. Open [my_demo.html](./my_demo.html) in your browser (e.g. Chrome)
 
+## Toy Sample
+
+There is a hard-coded toy sample available. You can access it by simply open [sample_my_demo.html](./sample_my_demo.html) in the browser.
+
