@@ -35,18 +35,14 @@
                 index = index + 1;
             }
             function init(){
-                var img = document.getElementById("showimage");
-                var txt = document.getElementById("showtext");
-                img.src = ImageList[0];
-                txt.innerHTML = LabelList[0];
                 setInterval("changeImg()", 2000);
             }
         </script>
     </head>
     <body onload="init()">
         <div class="imgHolder">
-            <img src="" id="showimage" height=700px/>
-            <span id="showtext" text-color="#fff"></span>
+            <img src="./sample_img/0.jpeg" id="showimage" height=700px/>
+            <span id="showtext" text-color="#fff">Here's the overlay text 0</span>
         </div>
     </body>
 </html>
