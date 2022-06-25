@@ -28,6 +28,9 @@
         <script src="my_helper.js"></script>
         <script>
             //console.log(ImageList.length, LabelList.length) // should be of the same length
+            if (ImageList.length != LabelList.length) {
+                alert("image and label list length doesn't match");
+            }
             var index = 0;
             function changeImg(){
                 var img = document.getElementById("showimage");
